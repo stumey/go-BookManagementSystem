@@ -28,7 +28,7 @@ func GetBookById(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		fmt.Println("error while parsing")
 	}
-	booksDetails, _ := models.GetBookById(ID)
+	bookDetails, _ := models.GetBookById(ID)
 	res, _ := json.Marshal(bookDetails)
 	w.Header().Set("Content-Type", "pkglication/json")
 	w.WriteHeader(http.StatusOK)
