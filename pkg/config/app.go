@@ -9,7 +9,7 @@ var (
 )
 
 func Connect() {
-	d, err := gorm.Open("mysql", "admin:password/simplerest?charset=utf8&parseTime=True&loc=local")
+	d, err := gorm.Open("mysql", "admin:password/simplerest?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
 		panic(err)
 	}
